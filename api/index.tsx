@@ -59,7 +59,7 @@ return c.res({image:(
   })
 })
 app.castAction('/', (c) => {
-  return c.frame({action:`https://far.cards/${c.var.interactor?.fid}`})
+  return c.frame({action:`https://far.cards/${c.var.cast?.author.fid}`})
 }, {
   name: 'Buy farcard',
   icon: 'image',
