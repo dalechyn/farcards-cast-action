@@ -4,10 +4,15 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+patchedDependencies:
+  frog@0.8.6-multi-step-cast-actions.20240426T125253:
+    hash: 2u3w27mygc4u6sa5thu74wggue
+    path: patches/frog@0.8.6-multi-step-cast-actions.20240426T125253.patch
+
 dependencies:
   frog:
     specifier: 0.8.6-multi-step-cast-actions.20240426T125253
-    version: 0.8.6-multi-step-cast-actions.20240426T125253(@types/node@14.18.33)(hono@4.2.8)(typescript@5.4.5)
+    version: 0.8.6-multi-step-cast-actions.20240426T125253(patch_hash=2u3w27mygc4u6sa5thu74wggue)(@types/node@14.18.33)(hono@4.2.8)(typescript@5.4.5)
   hono:
     specifier: ^4
     version: 4.2.8
@@ -1686,7 +1691,7 @@ packages:
     dependencies:
       to-regex-range: 5.0.1
 
-  /frog@0.8.6-multi-step-cast-actions.20240426T125253(@types/node@14.18.33)(hono@4.2.8)(typescript@5.4.5):
+  /frog@0.8.6-multi-step-cast-actions.20240426T125253(patch_hash=2u3w27mygc4u6sa5thu74wggue)(@types/node@14.18.33)(hono@4.2.8)(typescript@5.4.5):
     resolution: {integrity: sha512-qzPM4MaqoYZBZcggFaR7qEZFG7aGLd2aH4129bpl8IuZkuKYtblkcHS6z0W7z9XIKDc0Gq9M4S3tbbFVCvqysw==}
     hasBin: true
     peerDependencies:
@@ -1728,6 +1733,7 @@ packages:
       - utf-8-validate
       - zod
     dev: false
+    patched: true
 
   /fs-extra@11.1.0:
     resolution: {integrity: sha512-0rcTq621PD5jM/e0a3EJoGC/1TC5ZBCERW82LQuwfGnCa1V8w7dpYH1yNu+SLb6E5dkeCBzKEyLGlFrnr+dUyw==}

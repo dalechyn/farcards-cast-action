@@ -22,8 +22,8 @@ export const app = new Frog({
     }),
   )
 
+
 app.castAction('/', (c) => {
-  c.var
   return c.frame({action:`https://far.cards/${c.var.interactor?.fid}`})
 }, {
   name: 'Buy farcard',
