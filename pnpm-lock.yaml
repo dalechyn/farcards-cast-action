@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   frog:
-    specifier: 0.8.6-multi-step-cast-actions.20240426T232515
-    version: 0.8.6-multi-step-cast-actions.20240426T232515(@types/node@14.18.33)(hono@4.2.8)(typescript@5.4.5)
+    specifier: ^0.9.0
+    version: 0.9.0(@types/node@14.18.33)(hono@4.2.8)(typescript@5.4.5)
   hono:
     specifier: ^4
     version: 4.2.8
@@ -1777,8 +1777,8 @@ packages:
     dependencies:
       to-regex-range: 5.0.1
 
-  /frog@0.8.6-multi-step-cast-actions.20240426T232515(@types/node@14.18.33)(hono@4.2.8)(typescript@5.4.5):
-    resolution: {integrity: sha512-absolzOzjgf7CSJ3N+v3CRMe8HoyoEqX8MlWKq6ESOtR0WSc/90tgVw+owtq8IgcLMlBiClazAnioHg2WBtU6g==}
+  /frog@0.9.0(@types/node@14.18.33)(hono@4.2.8)(typescript@5.4.5):
+    resolution: {integrity: sha512-jBgrR+23z71guLc0MYDJcxUEBsjoajrgKWRas3Q6YtKD8mjw5zZmCsCxgiFx9bNgjSJ3vxgKia1xNMZDZsoMWQ==}
     hasBin: true
     peerDependencies:
       hono: ^4
@@ -2432,6 +2432,7 @@ packages:
   /punycode@2.3.1:
     resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
     engines: {node: '>=6'}
+    requiresBuild: true
     dev: true
 
   /queue-microtask@1.2.3:

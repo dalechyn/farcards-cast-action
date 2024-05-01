@@ -61,7 +61,7 @@ app.frame("/install", (c) => {
 app.castAction(
 	"/",
 	(c) => {
-		return c.frame({ action: `https://far.cards/${c.var.cast?.author.fid}` });
+		return c.frame({ path: `https://far.cards/${c.var.cast?.author.fid}` });
 	},
 	{
 		name: "Trade far.cards",

@@ -8,7 +8,7 @@
 		"deploy": "vercel"
 	},
 	"dependencies": {
-		"frog": "0.8.6-multi-step-cast-actions.20240426T232515",
+		"frog": "^0.9.0",
 		"hono": "^4"
 	},
 	"devDependencies": {
