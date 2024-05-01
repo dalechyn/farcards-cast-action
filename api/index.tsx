@@ -64,9 +64,10 @@ app.castAction(
 		return c.frame({ action: `https://far.cards/${c.var.cast?.author.fid}` });
 	},
 	{
-		name: "Buy farcard",
+		name: "Trade far.cards",
 		icon: "image",
-		description: "Buy far.cards card of a user that casted this cast.",
+		description: "Trade Farcard of a user that casted this cast.",
+		aboutUrl: "https://warpcast.com/dalechyn.eth/0x3b7f5317",
 	},
 );
 
