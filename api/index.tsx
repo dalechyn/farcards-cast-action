@@ -47,7 +47,7 @@ app.castAction(
 		return c.frame({ path: `https://far.cards/${c.var.cast?.author.fid}` });
 	},
 	{
-		name: "(test) Trade far.cards",
+		name: "Trade far.cards",
 		icon: "image",
 		description: "Trade Farcard of a user that casted this cast.",
 	},
