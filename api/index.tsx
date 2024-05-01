@@ -36,11 +36,18 @@ app.frame("/install", (c) => {
 });
 app.castAction(
 	"/",
-	(c) => {
+	async (c) => {
+		const holdersData = await fetch(
+			`https://far.cards/api/holders/${c.var.cast?.author.fid}`,
+		).then((r) => r.json());
+		if (holdersData.error === "User did not mint a farcard")
+			return c.error({
+				message: `${c.var.cast?.author.username} did not mint a farcard.`,
+			});
 		return c.frame({ path: `https://far.cards/${c.var.cast?.author.fid}` });
 	},
 	{
-		name: "Trade far.cards",
+		name: "(test) Trade far.cards",
 		icon: "image",
 		description: "Trade Farcard of a user that casted this cast.",
 	},
