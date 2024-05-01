@@ -26,6 +26,7 @@ app.frame("/install", (c) => {
 	return c.res({
 		image:
 			"https://github.com/dalechyn/farcards-cast-action/blob/main/img.png?raw=true",
+		imageAspectRatio: "1:1",
 		imageOptions: {
 			height: 1071,
 			width: 1071,
