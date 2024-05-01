@@ -14,10 +14,10 @@ export const app = new Frog({
 	assetsPath: "/",
 	basePath: "/api",
 	// Supply a Hub to enable frame verification.
-	hub: neynar({ apiKey: "NEYNAR_FROG_FM" }),
+	hub: neynar({ apiKey: process.env.NEYNAR_API_KEY! }),
 }).use(
 	neynarMiddleware({
-		apiKey: "NEYNAR_FROG_FM",
+		apiKey: process.env.NEYNAR_API_KEY!,
 		features: ["interactor", "cast"],
 	}),
 );
